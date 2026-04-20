@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import CyberpunkUI from './components/CyberpunkUI';
+import GlassmorphismUI from './components/GlassmorphismUI';
 
 const API_BASE = 'http://localhost:8001';
 
@@ -34,8 +34,8 @@ function App() {
   };
 
   return (
-    <div className="app-container theme-cyberpunk">
-      <CyberpunkUI params={params} setParams={setParams} onSolve={handleSolve} results={results} loading={loading} />
+    <div className="app-container theme-glass">
+      <GlassmorphismUI params={params} setParams={setParams} onSolve={handleSolve} results={results} loading={loading} />
     </div>
   );
 }
